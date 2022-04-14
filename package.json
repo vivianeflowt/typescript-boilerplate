@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "fast-glob": "^3.2.11",
+    "fs-extra": "^10.0.1",
+    "lodash": "^4.17.21",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.24"
+  },
+  "scripts": {
+    "reset": "./scripts/reset.sh",
+    "fix": "run-s fix:*",
+    "fix:format": "prettier --write src/**/*.{ts}",
+    "typesync": "typesync"
+  }
+}

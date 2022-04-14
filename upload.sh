@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 clear
@@ -9,5 +10,7 @@ rm -rf ./@typescript
 rm -rf ./temp/*
 
 git add .
-git commit -m "step"
+git commit -m step
 git push
+
+
