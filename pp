@@ -1,6 +1,0 @@
-
-#!/bin/bash
-
-clear
-
-pnpm $@

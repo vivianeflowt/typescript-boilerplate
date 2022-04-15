@@ -1,1 +1,1 @@
-export { add } from './lib/add.js'
+console.log('TEST');

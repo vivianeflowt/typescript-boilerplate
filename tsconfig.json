@@ -8,13 +8,11 @@
     "composite": false,
     "incremental": true,
     "disableSourceOfProjectReferenceRedirect": true,
-    "target": "ES2020",
-    "lib": [
-      "ESNext"
-    ],
-    "module": "ESNext",
+    //
+    "target": "es2017",
+    "module": "commonjs",
     "moduleResolution": "Node",
-    "isolatedModules": true,
+    "isolatedModules": false,
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "importsNotUsedAsValues": "error",
@@ -24,8 +22,14 @@
     "declarationMap": true,
     "sourceMap": false,
     "removeComments": false,
+    // 
     "strict": false,
-    "forceConsistentCasingInFileNames": true,
+    "alwaysStrict": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": false,
     "noImplicitAny": false,
     "noImplicitThis": false,
     "noUnusedLocals": false,
@@ -34,7 +38,7 @@
     "noFallthroughCasesInSwitch": false,
     "noUncheckedIndexedAccess": false,
     "noPropertyAccessFromIndexSignature": false,
-    "noImplicitOverride": true,
+    "noImplicitOverride": false,
     "skipLibCheck": true
   },
   "include": [
