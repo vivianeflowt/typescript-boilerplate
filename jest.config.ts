@@ -19,7 +19,7 @@ const config: Config.InitialOptions = {
     [
       'jest-html-reporters',
       {
-        publicPath: './html-report',
+        publicPath: './coverage/html-report',
         filename: 'report.html',
 
         openReport: true,
