@@ -8,12 +8,24 @@ const config: Config.InitialOptions = {
   transform: {
     '^.+\\.(t|j)s$': 'ts-jest',
   },
-  collectCoverageFrom: ['src/lib/**/*.(t|j)s'],
+  collectCoverageFrom: ['src/**/*.(t|j)s'],
   coveragePathIgnorePatterns: ['index.ts', 'debug.ts'],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
-  maxConcurrency: 5,
   maxWorkers: '50%',
+  collectCoverage: false,
+  reporters: [
+    'default',
+    [
+      'jest-html-reporters',
+      {
+        publicPath: './html-report',
+        filename: 'report.html',
+
+        openReport: true,
+      },
+    ],
+  ],
 };
 
 export default config;

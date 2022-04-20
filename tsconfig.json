@@ -1,61 +1,50 @@
 {
   "compilerOptions": {
-    "pretty": true,
-    "outDir": "dist",
-    "composite": false,
     "incremental": true,
-    "disableSourceOfProjectReferenceRedirect": true,
     "target": "es2017",
-    "allowJs": true,
-    "skipLibCheck": true,
-    "noLib": false,
+    "outDir": "build/dev",
+    "rootDir": ".",
+    "moduleResolution": "node",
     "module": "commonjs",
-    "moduleResolution": "Node",
-    "isolatedModules": false,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "importsNotUsedAsValues": "error",
-    "allowSyntheticDefaultImports": true,
-    "importHelpers": true,
     "declaration": true,
-    "declarationMap": false,
-    "sourceMap": true,
-    "removeComments": false,
-    //
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    // 
-    "strict": false,
-    "alwaysStrict": false,
-    "strictNullChecks": false,
-    "strictFunctionTypes": false,
-    "strictBindCallApply": false,
-    "strictPropertyInitialization": false,
-    "forceConsistentCasingInFileNames": false,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitReturns": false,
-    "noFallthroughCasesInSwitch": false,
-    "noUncheckedIndexedAccess": false,
-    "noPropertyAccessFromIndexSignature": false,
-    "noImplicitOverride": false,
+    "inlineSourceMap": true,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "resolveJsonModule": true /* Include modules imported with .json extension. */,
+    "strict": true /* Enable all strict type-checking options. */,
+    /* Strict Type-Checking Options */
+    // "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+    // "strictNullChecks": true /* Enable strict null checks. */,
+    // "strictFunctionTypes": true /* Enable strict checking of function types. */,
+    // "strictPropertyInitialization": true /* Enable strict checking of property initialization in classes. */,
+    // "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
+    // "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
+    /* Additional Checks */
+    "noUnusedLocals": true /* Report errors on unused locals. */,
+    "noUnusedParameters": true /* Report errors on unused parameters. */,
+    "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+    "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+    /* Debugging Options */
+    "traceResolution": false /* Report module resolution log messages. */,
+    "listEmittedFiles": false /* Print names of generated files part of the compilation. */,
+    "listFiles": false /* Print names of files part of the compilation. */,
+    "pretty": true /* Stylize errors and messages using color and context. */,
+    /* Experimental Options */
+    // "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    // "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"
+    ]
   },
   "include": [
-    "src"
-, "code/menu.ts", "src/tmpl-out.ts", ".guru/code/template.ts", "test/deb/aaa.service.spec.ts"  ],
-  "exclude": [
-    "**/dist",
-    "**/build",
-    "**/node_modules",
-    "**/packages"
+    "**/*.ts",
   ],
-  "ts-node": {
-    // these options are overrides used only by ts-node
-    // same as our --compilerOptions flag and our TS_NODE_COMPILER_OPTIONS environment variable
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  },
+  "exclude": [
+    "node_modules/**"
+  ],
+  "compileOnSave": false
 }
