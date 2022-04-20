@@ -1,0 +1,28 @@
+# files
+.history
+.DS_Store
+.idea
+Thumbs.db
+tmp/
+temp/
+*.log
+*.tmp
+debug.ts
+debug.js
+test/
+
+# source
+**/*.ts
+*.ts
+
+# definitions
+!**/*.d.ts
+!*.d.ts
+
+# configuration
+package-lock.json
+yarn.lock
+tslint.json
+tsconfig.build.json
+tsconfig.json
+.prettierrc

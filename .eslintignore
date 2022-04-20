@@ -1,4 +1,3 @@
 node_modules
-documentation
-
-
+dist
+src/cli.js

@@ -1,12 +1,12 @@
 {
     "env": {
-        "jest": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "jest": true,
+        "jest/globals": true
     },
     "extends": [
-        "standard",
-        "plugin:@typescript-eslint/recommended",
+        "xo",
         "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
@@ -17,15 +17,14 @@
     "plugins": [
         "@typescript-eslint",
         "simple-import-sort",
-        "prettier"
-    ],
-    "ignorePatterns": [
-        "node_modules/**",
-        "dist/**"
+        "prettier",
+        "jest"
     ],
     "rules": {
         "prettier/prettier": "error",
         "simple-import-sort/exports": "error",
-        "simple-import-sort/imports": "error"
+        "simple-import-sort/imports": "error",
+        "new-cap": "off",
+        "no-unused-vars": "warn"
     }
 }

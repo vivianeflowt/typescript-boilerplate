@@ -1,0 +1,22 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "baseUrl": "src",
+        "incremental": false,
+        "sourceMap": false,
+        "declaration": true,
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "fixtures",
+        "test",
+        "node_modules",
+        "**/*.spec.ts",
+        "**/dist",
+        "**/node_modules",
+        "**/src/__tests__"
+    ]
+}

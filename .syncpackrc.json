@@ -1,0 +1,45 @@
+{
+    "filter": ".",
+    "indent": "  ",
+    "overrides": true,
+    "peer": true,
+    "dev": true,
+    "prod": true,
+    "resolutions": true,
+    "semverGroups": [],
+    "semverRange": "",
+    "sortAZ": [
+        "peerDependencies",
+        "dependencies",
+        "devDependencies",
+        "contributors",
+        "keywords"
+    ],
+    "sortFirst": [
+        "name",
+        "description",
+        "version",
+        "author",
+        "license",
+        "private",
+        "workspaces",
+        "repository",
+        "homepage",
+        "contributors",
+        "keywords",
+        "bin",
+        "main",
+        "engines",
+        "scripts",
+        "jest",
+        "config",
+        "peerDependencies",
+        "dependencies",
+        "devDependencies"
+    ],
+    "source": [
+        "package.json",
+        "packages/*/package.json"
+    ],
+    "versionGroups": []
+}

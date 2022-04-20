@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "emitDeclarationOnly": true,
-    "rootDir": "src",
-    "outDir": "dist",
-    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
     "pretty": true,
+    "outDir": "dist",
     "composite": false,
     "incremental": true,
     "disableSourceOfProjectReferenceRedirect": true,
-    //
     "target": "es2017",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noLib": false,
     "module": "commonjs",
     "moduleResolution": "Node",
     "isolatedModules": false,
@@ -19,9 +18,12 @@
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "declaration": true,
-    "declarationMap": true,
-    "sourceMap": false,
+    "declarationMap": false,
+    "sourceMap": true,
     "removeComments": false,
+    //
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     // 
     "strict": false,
     "alwaysStrict": false,
@@ -39,9 +41,21 @@
     "noUncheckedIndexedAccess": false,
     "noPropertyAccessFromIndexSignature": false,
     "noImplicitOverride": false,
-    "skipLibCheck": true
   },
   "include": [
     "src"
-  ]
+, "code/menu.ts", "src/tmpl-out.ts", ".guru/code/template.ts", "test/deb/aaa.service.spec.ts"  ],
+  "exclude": [
+    "**/dist",
+    "**/build",
+    "**/node_modules",
+    "**/packages"
+  ],
+  "ts-node": {
+    // these options are overrides used only by ts-node
+    // same as our --compilerOptions flag and our TS_NODE_COMPILER_OPTIONS environment variable
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
 }
