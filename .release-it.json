@@ -8,7 +8,7 @@
     "publish": false
   },
   "github": {
-    "release": true
+    "release": false
   },
   "hooks": {
     "after:bump": [
