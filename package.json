@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "license": "MIT",
   "main": "dist/index.js",
+  "module": "dist/main.js",
   "bin": {
     "guru": "./bin/run"
   },
@@ -69,6 +70,7 @@
     "eslint-plugin-jest": "^26.1.4",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "esm": "^3.2.25",
     "jest": "^27.5.1",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.2",
