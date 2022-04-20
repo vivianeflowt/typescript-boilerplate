@@ -4,7 +4,7 @@
     "overrides": true,
     "peer": true,
     "dev": true,
-    "prod": true,
+    "prod": false,
     "resolutions": true,
     "semverGroups": [],
     "semverRange": "",

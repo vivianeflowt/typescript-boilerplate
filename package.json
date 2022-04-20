@@ -33,8 +33,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-    "semantic-release": "semantic-release",
+    "coverage": "jest --coverage",
     "commit": "cz",
     "publish": "np",
     "typesync": "typesync"
@@ -45,12 +44,7 @@
     }
   },
   "dependencies": {
-    "coveralls": "^3.1.1",
-    "fast-glob": "^3.2.11",
-    "fs-extra": "^10.1.0",
-    "lodash": "^4.17.21",
-    "nodemon": "^2.0.15",
-    "semantic-release": "^19.0.2"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
@@ -76,10 +70,12 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
     "np": "^7.6.1",
     "prettier": "^2.6.2",
     "release-it": "^14.14.2",
     "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.2",
     "syncpack": "^6.2.1",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
