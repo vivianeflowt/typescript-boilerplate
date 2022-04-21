@@ -26,6 +26,6 @@
         "simple-import-sort/imports": "error",
         "new-cap": "off",
         "no-unused-vars": "warn",
-         "capitalized-comments": "off"
+        "capitalized-comments": "off"
     }
 }
