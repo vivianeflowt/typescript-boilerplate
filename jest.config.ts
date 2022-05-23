@@ -1,31 +1,20 @@
+// @ts-ignore
 import type { Config } from '@jest/types';
+import os from 'os';
+import path from 'path';
 
-// Sync object
 const config: Config.InitialOptions = {
-  verbose: true,
-  rootDir: '.',
-  testRegex: '.*\\.spec\\.ts$',
-  transform: {
-    '^.+\\.(t|j)s$': 'ts-jest',
-  },
-  collectCoverageFrom: ['src/**/*.(t|j)s'],
-  coveragePathIgnorePatterns: ['index.ts', 'debug.ts'],
-  coverageDirectory: 'coverage',
+  preset: 'ts-jest',
+  testMatch: ['**/*.test.[jt]s?(x)', '**/*.spec.[jt]s?(x)'],
   testEnvironment: 'node',
-  maxWorkers: '50%',
   collectCoverage: false,
-  reporters: [
-    'default',
-    [
-      'jest-html-reporters',
-      {
-        publicPath: './coverage/html-report',
-        filename: 'report.html',
-
-        openReport: true,
-      },
-    ],
-  ],
+  verbose: true,
+  coverageDirectory: 'coverage',
+  coveragePathIgnorePatterns: ['/node_modules/'],
+  // testPathIgnorePatterns: ['/utils/', '/__mocks__/.+', '/__fixtures__/.+'],
+  testTimeout: 4 * 60 * 1000, // 4 minutes
+  setupFilesAfterEnv: ['jest-extended/all'],
+  cacheDirectory: path.join(__dirname, '.jest-cache'),
+  maxConcurrency: Math.floor(os.cpus().length / 2),
 };
-
 export default config;

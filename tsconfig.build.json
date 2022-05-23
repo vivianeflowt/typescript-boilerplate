@@ -1,19 +1,23 @@
 {
     "extends": "./tsconfig.json",
     "compilerOptions": {
-        "outDir": "dist/main",
-        "rootDir": "src",
-        "incremental": false,
+        "sourceMap": false
     },
     "include": [
-        "src"
+        "src/**/*.ts",
+        "../../typings/**/*.d.ts",
     ],
     "exclude": [
-        "node_modules/**",
-        "src/cli/**/*.ts",
-        "**/*.spec.ts",
-        "**/dist",
-        "**/src/__tests__",
-        "**/test"
-    ]
+        "**__tests__/**",
+        "**__mocks__/**",
+        "**__fixtures__/**",
+        "**/*.test.ts",
+        "**/*.test.ts",
+    ],
+    "typedocOptions": {
+        "entryPoints": [
+            "src"
+        ],
+        "out": "docs"
+    }
 }

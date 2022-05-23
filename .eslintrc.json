@@ -5,6 +5,12 @@
         "jest": true,
         "jest/globals": true
     },
+    "ignorePatterns": [
+        "!node_modules/*",
+        "!dist/*",
+        "!scripts/*",
+        "!converage/*"
+    ],
     "extends": [
         "xo",
         "plugin:prettier/recommended"
@@ -25,7 +31,7 @@
         "simple-import-sort/exports": "error",
         "simple-import-sort/imports": "error",
         "new-cap": "off",
-        "no-unused-vars": "warn",
-        "capitalized-comments": "off"
+        "capitalized-comments": "off",
+        "no-unused-vars": "off"
     }
 }
