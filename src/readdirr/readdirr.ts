@@ -1,5 +1,4 @@
 import fs, { Dirent } from 'fs';
-import minimatch from 'minimatch';
 import path from 'path';
 
 export async function readDirR(
@@ -17,9 +16,5 @@ export async function readDirR(
         ),
       );
     })
-    .then((results) =>
-      pattern
-        ? minimatch.match([...results].flat(), pattern, { matchBase: true })
-        : [...results].flat(),
-    );
+    .then((results) => [...results].flat());
 }

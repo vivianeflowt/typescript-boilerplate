@@ -32,10 +32,4 @@ describe('readDirR', () => {
     const result = await readDirR('/app');
     expect(result.length).toEqual(5);
   });
-
-  test('should have 3 files with "*.json" filter', async () => {
-    const result = await readDirR('/app', '*.json');
-
-    expect(result.length).toEqual(2);
-  });
 });

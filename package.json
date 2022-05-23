@@ -1,14 +1,14 @@
 {
   "name": "typescript-boilerplate",
-  "description": "A typescript boilerplate for building typescript libraries and projects",
   "version": "0.0.2",
+  "description": "A typescript boilerplate for building typescript libraries and projects",
   "license": "MIT",
-  "bin": {
-    "bin": "./bin/run"
-  },
   "author": {
     "name": "Viviane Florido @vivianeflowt",
     "email": "vivianeflowt@gmail.com"
+  },
+  "bin": {
+    "bin": "./bin/run"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
