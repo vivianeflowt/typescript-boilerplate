@@ -20,16 +20,16 @@
         "target": "es2020",
     },
     "files": [
-        "typings/global.d.ts"
+        "src/types/global.d.ts"
     ],
     "include": [
-        "jest.config.ts",
-        "jest.setup.ts",
-        "src/**/*.ts",
-        "tests/**/*.ts",
-        "typings/**/*.d.ts",
-        "__tests__/**/*.ts",
-        "jest.setup.ts",
+        "src",
+    ],
+    "exclude": [
+        "*.test.ts",
+        "*.test.tsx",
+        "*.spec.ts",
+        "*.spec.tsx"
     ],
     "typedocOptions": {
         "entryPoints": [
